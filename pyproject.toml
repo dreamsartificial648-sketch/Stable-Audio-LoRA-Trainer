@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stable-audio-fine-tuner"
+version = "0.1.0"
+description = "A desktop workspace for Stable Audio 3 Small-SFX LoRA fine-tuning"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {file = "LICENSE"}
+dependencies = ["PySide6>=6.6,<7", "numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+sfx-tuner = "sfx_tuner.app:main"
+
+[tool.setuptools.packages.find]
+include = ["sfx_tuner*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

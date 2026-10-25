@@ -1,0 +1,16 @@
+# Core versions used by ADAM's pinned Small-SFX runtime.
+# torch and torchaudio are installed separately from the CUDA wheel index.
+pytorch-lightning==2.5.5
+numpy==2.2.6
+transformers==5.20.2
+huggingface-hub==2.3.0
+safetensors==0.8.0
+soundfile==0.14.0
+einops==0.8.2
+einops-exts==0.0.4
+dill==0.4.1
+# Imported by the upstream training modules even with external logging disabled.
+matplotlib==3.10.9
+pillow==12.3.0
+wandb==0.31.0
+
