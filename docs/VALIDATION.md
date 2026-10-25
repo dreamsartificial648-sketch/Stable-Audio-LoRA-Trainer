@@ -23,6 +23,7 @@ Other machines, GPUs, and long training sessions require additional testing.
 
 - CPU/Qt checks: **23 passed, 1 skipped**. The skipped test requires permission to
   create a Windows symlink; path traversal and out-of-dataset caption writes are tested.
+- GitHub Actions: **24 passed** on a fresh Windows runner, including the symlink check.
 - Desktop installed successfully into its own `.venv`, with `pip check` passing.
   All five pages were rendered and inspected. This environment contains no PyTorch.
 - First GPU smoke pass: Windows, Python 3.10.6, PyTorch 2.7.1+cu126,
