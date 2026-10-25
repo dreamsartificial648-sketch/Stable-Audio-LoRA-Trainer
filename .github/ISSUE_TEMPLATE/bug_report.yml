@@ -1,0 +1,31 @@
+name: Bug report
+description: Report an installation problem, training failure, or desktop bug.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include settings and the page or operation where the issue occurred.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include Windows version, Python version, GPU and VRAM, and the Setup runtime report if available.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant error or logs
+      description: Copy the relevant Session log excerpt. Remove access tokens, credentials, and private file paths.
+      render: text

@@ -1,5 +1,7 @@
 # Stable Audio Fine-Tuner
 
+[![Desktop and dataset checks](https://github.com/dreamsartificial648-sketch/Stable-Audio-LoRA-Trainer/actions/workflows/tests.yml/badge.svg)](https://github.com/dreamsartificial648-sketch/Stable-Audio-LoRA-Trainer/actions/workflows/tests.yml)
+
 A Python desktop workspace for **Stable Audio 3 Small-SFX LoRA fine-tuning**, derived
 from ADAM. Prepare captioned clips, train an adapter, and listen to generated sound
 effects in one app.
@@ -35,7 +37,14 @@ and batch size 1. See [validation notes](docs/VALIDATION.md) for measured checks
 
 ## Install and launch
 
-1. Download/clone this repository into a writable folder.
+1. [Download the source ZIP](https://github.com/dreamsartificial648-sketch/Stable-Audio-LoRA-Trainer/archive/refs/heads/main.zip)
+   and extract it into a writable folder, or clone the repository:
+
+   ```powershell
+   git clone https://github.com/dreamsartificial648-sketch/Stable-Audio-LoRA-Trainer.git
+   cd Stable-Audio-LoRA-Trainer
+   ```
+
 2. Double-click **Setup.bat** to install the desktop environment.
 3. Double-click **Launch.bat**.
 4. In Setup, choose **Install training runtime**, then **Check runtime**.
@@ -49,6 +58,10 @@ Tokens are never written to app settings, job requests, or documentation.
 Accept terms directly on Hugging Face; this app cannot accept them for you.
 The optional **Model cache** field lets you reuse a Hugging Face cache from another
 installation. Choose the cache root containing `hub/`; this does not copy or move weights.
+
+For a problem with installation or a run, [open a bug report](https://github.com/dreamsartificial648-sketch/Stable-Audio-LoRA-Trainer/issues/new?template=bug_report.yml)
+with your GPU, Python version, and the relevant error from Session logs. Remove
+tokens and private paths before sharing logs.
 
 To run directly in an existing desktop Python environment:
 
@@ -161,4 +174,3 @@ are excluded):
 ```powershell
 python scripts/package_source.py
 ```
-
